@@ -1,0 +1,387 @@
+.general__container{
+
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+
+}
+
+.header__container{
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    border: 1px solid transparent;
+    border-bottom-color: #EDDDDD;
+
+}
+
+.headerContainer__tall{
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: 120px;
+
+}
+
+.logo__container{
+
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 60px;
+
+}
+
+.logo__img{
+
+    margin-left: 4%;
+
+}
+
+.btns__container{
+
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content: space-between; 
+    gap: 2%;   
+    padding: 2%;
+    height: 60px;
+
+}
+
+.btns__close{
+
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;    
+    height: 60px;
+
+}
+
+.header__btns{
+
+    display: flex;
+    width: 314px;
+    height: 48px;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 700;
+    transition: 1s;
+
+}
+
+.btn__loginHome{
+
+    background-color: var(--white);
+    border-color: var(--blue);
+    color: var(--blue);
+    transition: 1s;
+    
+}
+
+.btn__loginHome:hover{
+
+    background-color: var(--blue);
+    border-color: var(--white);
+    color: var(--white);
+
+}
+
+.btn__registerLogin{
+
+    background-color: var(--blue);
+    color: var(--white);
+    transition: 1s;
+
+}
+
+.btn__registerLogin:hover{
+
+    background-color: var(--white);
+    border-color: var(--blue);
+    color: var(--blue);
+
+}
+
+.menu__ham, .menu__close{
+
+    margin-right: 4%;
+    cursor: pointer;
+
+}
+
+.hidden, .btnClose__menu{
+
+    display: none;
+
+}
+
+/* ****************************************** */
+
+.homeImg__container{
+
+    display: none;
+
+}
+
+/* ****************************************** */
+
+.companies__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 350px;
+    background-color: #F8F8F8;
+}
+
+#sectors{
+
+    width: 98%;
+    height: 52.18px;
+    margin: 5px 0;
+    font-size: 20px;
+    font-weight: 400;
+    background-color: var(--blue);
+    color: var(--white);
+
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url(.././assets/arrow.png) no-repeat center right var(--blue);
+    font-size: 20px;
+    font-weight: 200;
+    text-align: center;
+
+}
+
+.sectors__cards{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 30px;
+    width: 100%;
+    height: 180px;
+    overflow: auto;
+    border: 1px solid transparent;
+
+}
+
+.card__container{
+
+    min-width: 241px;
+    height: 171px;
+    margin: 0.1%;
+    padding-left: 10px;
+    background-color: var(--white);
+    border: 1px solid transparent;
+    border-bottom-color: var(--blue);
+
+}
+
+.card__title{
+
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+
+}
+
+.card__time, .card__sector{
+    
+    font-size: 14px;
+    font-weight: 400;
+
+}
+
+.card__time{
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+
+.card__sector{  
+    
+    border: 1px solid var(--blue);
+    border-radius: 15px;
+    padding: 10px;
+    color: var(--blue);
+    
+}
+
+/* ****************************************** */
+
+.accessImg__container{
+
+    display: none;
+    width: 100%;
+    height: 80vh;
+
+}
+
+.access__img{
+
+    width: 100%;
+    height: 80vh;
+
+}
+
+footer{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 120px;
+    border: 1px solid var(--blue);
+    background-color: var(--blue);
+    color: var(--white);
+
+}
+
+footer > p {
+
+    width: 40%;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+
+}
+
+
+/* ****************************************** */
+
+@media(min-width: 769px){
+
+    .btns__close{
+
+        display: none;
+
+    }
+
+    .btns__container{
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 2%;
+        width: 50%;
+        padding: 0;
+
+    }
+
+    .header__btns{
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 36%;
+
+    }
+
+    .btn__registerLogin{
+
+        margin-right: 5%;
+
+    }
+
+    main{
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 10px;
+
+    }
+
+    .homeImg__container{
+
+        width: 45%;
+        height: 81vh;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .home__img{
+
+        display: flex;
+        max-height: 79vh;
+        object-fit: cover;
+
+    }
+
+    .companies__container{
+
+        width: 50%;
+        height: 79vh;
+        justify-content: flex-start;
+        border: none;
+
+    }
+
+    #sectors{
+
+        width: 100%;
+        height: 74.18px;
+
+    }
+
+    .sectors__cards{
+
+        flex-direction: column;
+        width: 90%;
+        height: 75vh;
+
+    }
+
+    .card__container{
+
+        width: 100%;
+        min-height: 150px;
+
+    }
+
+    .card__title{
+
+        margin-top: 5px;
+
+    }
+
+    .card__time{
+
+        margin-top: 2px;
+        margin-bottom: 30px;
+    }
+
+    .card__sector{
+
+        margin-top: 20px;
+
+    }
+
+    footer{
+
+        height: 48px;
+
+    }   
+
+}

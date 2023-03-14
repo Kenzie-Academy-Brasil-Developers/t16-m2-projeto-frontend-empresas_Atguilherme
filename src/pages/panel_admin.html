@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenzie Empresas</title>
+
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/globalStyles.css">
+    <link rel="stylesheet" href="../styles/toast.css">
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/control_panel.css">
+
+</head>
+<body>
+    
+    <div class="general__container">
+
+        <header class="headerAdmin__container">
+
+            <div class="logo__container">
+                <img class="logo__img" src="../assets/logo.svg" alt="imagem logotipo da empresa">
+            </div>
+            
+            <div class="btns__close">
+
+                <img class="menu__ham" src="../assets/menu_ham.svg" alt="botão menu">
+                
+                <img class="menu__close hidden" src="../assets/btnclose_menu.svg" alt="botão menu">
+
+                
+            </div>
+            
+            <div class="btns__container">
+                
+                <button class="header__btns btnAdmin__loginHome">Logout</button>
+                
+            </div>
+
+        </header>
+
+        <main>
+
+            <section class="admin__departments">
+
+                <div class="departments__header">
+
+                </div>
+        
+                <ul class="departments__container"></ul>
+
+            </section>
+
+            <section class="admin__users">
+
+                
+
+            </section>
+
+            
+            
+        </main>
+
+    </div>
+
+    <div class="toast__container hidden">
+        <p class="toast__Paragrapgh">Usuário cadastrado com sucesso</p>
+    </div>
+
+    <dialog class="modal__DepartmentsData">
+
+        <div class="modal__DepartContainer">
+
+            <div class="DepartContainer">
+
+                <span class="modal__DepartDataClose">X</span>
+
+            </div>
+
+            <h2 class="depart__title">Nome do Departamento</h2>
+
+            <div class="headerDepart__container">
+
+                <div class="depart__data">
+
+                    <h3 class="depart__description">Descrição do departamento</h3>
+        
+                    <p class="depart__company">Empresa pertencente</p>
+
+                </div>
+
+                <div class="users__toHire">
+
+                    <select name="select__user" class="select__user">
+                        <option value="Selecionar usuário">Selecionar usuário</option>
+                    </select>
+        
+                    <button class="toHire">Contratar</button>
+
+                </div>
+
+            </div>
+
+            <ul class="users_list">
+
+                <li class="user__card">
+                    <h2>Username</h2>
+                    <h3>Pleno</h3>
+                    <p>Company</p>
+
+                    <div class="btn__content">
+
+                        <button>Desligar</button>
+
+                    </div>
+
+                </li>
+
+                <li class="user__card">
+                    <h2>Username</h2>
+                    <h3>Pleno</h3>
+                    <p>Company</p>
+
+                    <div class="btn__content">
+
+                        <button>Desligar</button>
+
+                    </div>
+
+                </li>
+
+                <li class="user__card">
+                    <h2>Username</h2>
+                    <h3>Pleno</h3>
+                    <p>Company</p>
+
+                    <div class="btn__content">
+
+                        <button>Desligar</button>
+
+                    </div>
+
+                </li>
+
+                <li class="user__card">
+                    <h2>Username</h2>
+                    <h3>Pleno</h3>
+                    <p>Company</p>
+
+                    <div class="btn__content">
+
+                        <button>Desligar</button>
+
+                    </div>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </dialog>
+
+
+    <dialog class="modal__NewDepartment">
+
+        <div class="modal__NewDepartContainer">
+
+            <div class="NewDepartClose">
+
+                <span class="modal__NewDepartClose">X</span>
+
+            </div>
+
+            <h2>Criar Departamento</h2>
+
+            <input class="createDepart__input" type="text" name="name" placeholder="Nome do departamento">
+
+            <input class="createDepart__input" type="text" name="description" placeholder="Descrição">
+
+            <select name="company_uuid" class="selectCompany">
+
+                <option value="Selecionar empresa">Selecionar empresa</option>
+
+            </select>
+
+            <button class="btn_createDepart">Criar o departamento</button>
+
+        </div>
+
+    </dialog>
+
+
+    <dialog class="modal__DepartmentEdit">
+
+        <div class="modal__DepartEditContainer">
+
+            <div class="DepartEditContainer">
+
+                <span class="modal__DepartEditClose">X</span>
+
+            </div>
+
+            <h2>Editar Departamento</h2>
+
+            <input class="editDepart__input" type="text" name="description" placeholder="Valores anteriores da descrição">
+
+            <button class="btn__saveEdition">Salvar alterações</button>
+
+        </div>
+
+    </dialog>
+
+
+    <dialog class="modal__DepartmentRemove">
+
+        <div class="modal__DepartRemoveContainer">
+
+            <div class="DepartRemoveContainer">
+
+                <span class="modal__DepartRemoveClose">X</span>
+
+            </div>
+
+            <div class="RemoveMessageContent">
+
+                <p class="departRemoveMessage">Realmente deseja deletar o Departamento <span>NOME</span> e demitir seus funcionários?</p>
+        
+                <button class="departRemoveBtnConfirm">Confirmar</button>
+
+            </div>
+    
+
+        </div>        
+
+    </dialog>
+
+
+    <dialog class="modal__UserEdit">
+
+        <div class="modal__UserEditContainer">
+
+            <div class="UserEditContainer">
+
+                <span class="modal__UserEditClose">X</span>
+
+            </div>
+
+            <h2>Editar Usuário</h2>
+            
+            <div class="selects__content">
+
+                <select class="kind_of_work" name="kind_of_work" id="kind_of_work">
+                    
+                    <option value="Selecionar modalidade de trabalho">Selecionar modalidade de trabalho</option>
+                    
+                    <option value="Selecione o modo de trabalho">Selecione o modo de trabalho</option>
+                    <option value="Presencial">Presencial</option>
+                    
+                    <option value="Home Office">Home Office</option>
+                    
+                    <option value="Híbrido">Híbrido</option>
+                    
+                </select>
+                
+                <select class="professional_level" name="professional_level" id="professional_level">
+                    
+                    <option value="Selecione um nível profissional">Selecione um nível profissional</option>
+                    <option value="Estagio">Estagiário</option>
+                    <option value="Júnior">Júnior</option>
+                    <option value="Sênior">Senior</option>
+                    <option value="Pleno">Pleno</option>
+                    
+                </select>
+
+                
+                <button class="btnUserEditSave">Editar</button>
+                
+            </div>
+                
+        </div>
+
+    </dialog>
+
+
+    <dialog class="modal__UserRemove">
+
+        <div class="modal__UserRemoveContainer">
+
+            <p>Realmente deseja remover o usuário<span class="userName__span">NOME</span>?</p>
+            <button class="UserRemoveDelete">Deletar</button>
+        </div>
+
+    </dialog>
+
+    <script type="module" src="../scripts/panel_admin.js"></script>
+
+</body>
+</html>

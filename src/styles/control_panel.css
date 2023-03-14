@@ -1,0 +1,736 @@
+.general__container{
+
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+
+}
+
+.btnAdmin__loginHome{
+
+    width: 150px;
+    background-color: var(--white);
+    color: var(--blue);
+    border-color: var(--blue);
+    cursor: pointer;
+    transition: 1s;
+
+}
+
+.btnAdmin__loginHome:hover{
+
+    background-color: var(--blue);
+    border-color: var(--blue);
+    color: var(--white);
+
+}
+
+.headerAdmin__container{
+
+    width: 97.5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    border: 1px solid transparent;
+    border-bottom-color: #EDDDDD;
+
+}
+
+main{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+}
+
+.user__header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 10px;
+    width: 100%;
+    height: 121px;
+    margin-bottom: 15px;
+    background-color: #00000020;
+    border: 1px solid #817e7e;
+}
+
+.div1{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    width: 30%;
+
+}
+
+.user__name{
+
+    font-size: 30px;
+    font-weight: 700;
+
+}
+
+.user__email, .professional__level, .kindOf__work{
+
+    font-size: 22px;
+    font-weight: 400;
+
+}
+
+.div2{
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    width: 30%;
+    
+}
+
+.div3{
+
+    display: flex;
+    align-items:flex-end;
+    justify-content: flex-end;
+    padding: 30px 10px;
+    width: 30%;
+
+}
+
+.edit__span{
+
+    cursor: pointer;
+
+}
+.user__body, .hiredUser__body{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 467px;
+    background-color: #00000020;
+    margin-bottom: 20px;
+
+}
+
+.hiredUser__body{
+
+    justify-content: flex-start;
+
+}
+
+.hidden{
+
+    display: none;
+
+}
+
+
+.user__message{
+
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--black);
+
+
+}
+
+.admin__departments, .admin__users{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 95%;
+    height: 450px;
+    
+}
+
+.departments__header{
+
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.departmentsHeader__container{
+
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.departments__title, .adminUsers__header{
+
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.departments__select{
+    padding: 3px 5px;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+.departments__button{
+
+    width: 150px;
+    height: 48px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: var(--blue);
+    color: var(--white);
+    cursor: pointer;
+    transition: 1s;
+
+}
+
+.departments__button:hover{
+
+    background-color: var(--white);
+    border-color: var(--blue);
+    color: var(--blue);
+
+}
+
+.admin__users{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.departments__container, .users__container{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 90%;
+    height: 100%;
+    max-height: 100%;
+    background-color: #F8F8F8;
+    margin-top: 10px;
+    overflow: auto;
+
+}
+
+.department__item, .user__Item{
+
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    justify-content: space-around;
+    max-width: 489px;
+    width: 25%;
+    height: 240px;
+    border: 1px solid transparent;
+    border-bottom-color: var(--blue);
+
+}
+
+.department__name, .user__Name{
+
+    font-size: 20px;
+    font-weight: 700;
+
+}
+
+.department__description, .department__company, .professional__Level, .user__Company{
+
+    font-size: 18px;
+    font-weight: 400;
+
+}
+
+.div__lower{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.divUser__Lower{
+
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin: 0 10%;
+}
+
+.department__ImgEye, .department__ImgPen,.department__ImgTrash, .userImg__Pen, .userImg__Trash{
+
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    transition: 1s;
+
+}
+
+.department__ImgEye:hover, .department__ImgPen:hover,.department__ImgTrash:hover, .userImg__Pen:hover, .userImg__Trash:hover {
+
+    border: 1px solid #F8F8F8;
+
+}
+
+.modal__NewDepartment, .modal__DepartmentEdit, .modal__DepartmentRemove, .modal__UserEdit, .modal__UserRemove, .modal__DepartmentsData{
+    border: none;
+}
+
+.modal__DepartContainer{
+
+    width: 657px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.depart__title{
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.headerDepart__container{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.depart__data, .users__toHire{
+    width: 50%;
+    height: 140px;
+}
+
+.depart__description{
+
+    font-size: 20px;
+    font-weight: 700;
+
+}
+
+.depart__company{
+
+    font-size: 18px;
+    font-weight: 400;
+
+}
+
+.users__toHire{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+
+.select__user{
+
+    width: 322px;
+    height: 52px;
+}
+
+.toHire{
+    width: 157px;
+    height: 48px;
+}
+
+.users_list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 100%;
+    height: 250px;
+    overflow: auto;
+    margin-top: 10px;
+    background-color: #F8F8F8;
+}
+
+.user__card{
+    width: 206px;
+    min-width: 206px;
+    height: 165px;
+    background-color: var(--white);
+    padding-left: 10px;
+    border: 1px solid transparent;
+    border-bottom-color: var(--blue);
+
+}
+
+.user__card > h2{
+
+    font-size: 20px;
+    font-weight: 700;
+
+}
+
+.btn__content{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn__Dismiss{
+
+    width: 157px ;
+    height: 48px;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 5px;
+    background-color: var(--white);
+    border: 1px solid var(--red);
+    color: var(--red);
+    cursor: pointer;
+    transition: 1s;
+
+}
+
+.btn__Dismiss:hover{
+
+    background-color: var(--red);
+    border: 1px solid var(--white);
+    color: var(--white);
+
+}
+
+.user__card > h3, .user__card > p{
+
+    font-size: 18px;
+    font-weight: 400;
+
+}
+
+.modal__NewDepartContainer{
+
+    width: 506px;
+    height: 402px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+
+.modal__UserEditContainer{
+
+    width: 486px;
+    height: 302px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.modal__UserEditContainer > h2{
+
+    font-size: 36px;
+    font-weight: 700;
+    margin-left: 40px;
+    margin-bottom: 15px;
+}
+
+.UserEditContainer{
+
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+
+}
+
+.selects__content{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.kind_of_work, .professional_level{
+
+    width: 422px;
+    height: 52px;
+
+}
+
+.btnUserEditSave{
+
+    width: 422px;
+    height: 48px;
+
+}
+
+.NewDepartClose, .modal__DepartEditClose, .DepartContainer, .DepartRemoveContainer{
+
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.modal__NewDepartClose, .modal__DepartRemoveClose,  .modal__DepartEditClose, .modal__DepartDataClose, .modal__UserEditClose{
+
+    cursor: pointer;
+
+}
+
+.modal__NewDepartContainer > h2, .modal__DepartEditContainer > h2{
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.createDepart__input{
+
+    width: 415px;
+    height: 47px;
+    margin: 10px 0;
+
+}
+
+.selectCompany, .btn_createDepart{
+
+    width: 422px;
+    height: 52px;
+    margin: 10px 0;
+
+}
+
+.btn_createDepart, .btn__saveEdition, .btnUserEditSave{
+
+    font-size: 18px;
+    font-weight: 700;
+    background-color: var(--blue);
+    color: var(--white);
+    border: 1px solid var(--blue);
+    transition: 1s;
+
+}
+
+.btn_createDepart:hover, .btn__saveEdition:hover, .btnUserEditSave:hover{
+
+    font-size: 18px;
+    font-weight: 700;
+    background-color: var(--white);
+    color: var(--blue);
+    
+}
+
+.modal__DepartRemoveContainer{
+
+    width: 506px;
+    height: 222px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.RemoveMessageContent{
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    text-align: center;
+
+}
+
+.departRemoveMessage{
+
+    font-size: 28px;
+    font-weight: 700;
+
+}
+
+.departRemoveBtnConfirm, .toHire{
+
+    width: 250px;
+    height: 38px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: var(--green);
+    border: 1px solid var(--green);
+    color: var(--white);
+    transition: 1s;
+
+}
+
+.departRemoveBtnConfirm:hover, .toHire:hover{
+
+    background-color: var(--white);
+    color: var(--green);
+
+}
+
+
+.modal__DepartEditContainer{
+
+    width: 506px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.DepartEditContainer{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+   
+}
+
+.editDepart__input{
+
+    display: flex;
+    width: 422px;
+    height: 113px;
+    margin-top: 15px;
+    
+
+}
+
+.btn__saveEdition{
+
+    width: 429px;
+    height: 48px;
+    margin-top: 35px;
+    cursor: pointer;
+
+}
+
+.companyDepart__name{
+
+    display: flex;
+    width: 100%;
+    height: 78px;
+    background-color: var(--blue);
+    color: var(--white);
+    align-items: center;
+    justify-content: center;
+}
+
+.departName__Title {
+
+    font-size: 2rem;
+    font-weight: 700;
+
+}
+
+.coworkers__list{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1rem;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    margin-top: 10px;
+   
+}
+
+.coorker__item{
+
+    width: 318px;
+    height: 76px;
+    background-color: var(--white);
+    border: 1px solid var(--blue);
+    padding: 12px;
+
+}
+
+.coorker__item > h2{
+
+    font-size: 15px;
+    font-weight: 700;
+
+}
+
+.coorker__item > h3{
+
+    font-size: 15px;
+    font-weight: 200;
+    margin-top: 10px;
+
+}
+
+.modal__controler{
+
+    border: none;
+}
+
+.modal__container{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 306px;
+    height: 205px;
+
+}
+
+.modal__form{
+    
+    display: flex;
+    flex-direction: column;
+    
+    width: 100%;
+    height: 100%;
+
+}
+
+.modal__title{
+
+    font-size: 36px;
+    font-weight: 700;
+
+}
+
+.form__input, .modalBtn__editProfile{
+
+    height: 52px;
+    margin-top: 10px;
+    padding: 5px;
+
+}
+
+.form__input{
+
+    background-color: var(--white);
+    border-color: #00000020;
+    color: #00000020;
+
+}
