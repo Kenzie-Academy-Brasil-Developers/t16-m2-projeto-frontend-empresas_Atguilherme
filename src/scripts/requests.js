@@ -12,7 +12,7 @@ const requestHeaders = {
 }
 
 function redirect(is_admin){
-  console.log(is_admin)
+  
   if (is_admin){
    
    window.location.replace('/src/pages/panel_admin.html')

@@ -174,8 +174,6 @@ function renderModalEditUserData(){
 
     btnEditProfile.addEventListener('click', async ()=>{
 
-        //event.preventDefault()
-
         const updateUserBody = {}
         let count = 0
 
@@ -212,8 +210,6 @@ function userEdit(){
     const btnEdit = document.querySelector('.btnImg__edit')
     
     btnEdit.addEventListener('click', () => {
-
-        //event.preventDefault()
         
         renderModalEditUserData()
 

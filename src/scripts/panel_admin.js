@@ -4,31 +4,6 @@ import { toast } from "./toast.js"
 export const green = '#4BA036'
 export const red = '#CE4646'
 
-async function authentication() {
-    const token = localStorage.getItem('@kenzie_empresas:token')
-    
-    if(token) {
-        
-        //const {is_admin} = await validateUser(token)
-        
-        if (is_admin){
-            
-            window.location.replace('/src/pages/panel_admin.html')
-            
-        }else{
-            
-            window.location.replace('/src/pages/panel_user.html')
-            
-        }
-                
-    }else{
-        
-        window.location.replace('/index.html')
-
-    }
-
-}
-
 function logout(){
 
     const btnLogout = document.querySelector('.btnAdmin__loginHome')
@@ -586,16 +561,13 @@ async function hireEmploee(userUuid, departmentUuid){
         updateBody.user_uuid = userUuid
         updateBody.department_uuid = departmentUuid
         
-        //const hiredEmploee = await hireEmployeeToDepartment(updateBody)
+        const hiredEmploee = await hireEmployeeToDepartment(updateBody)
         
         const modalDepartContainer =document.querySelector('.modal__DepartContainer')
         modalDepartContainer.innerHTML = ''
         
         loadSelectUsers()
         renderDepartEmployees()
-
-
-        // limpar e recarregar a lista de usuários não contratados
 
     }
 }
@@ -656,9 +628,8 @@ function createEmployeeCard(employee){
 
 }
 
-authentication()
+
 logout()
 createAdminDepartmentsHeader()
 createAdminUsersHeader()
 getDepartments()
-authentication()

@@ -276,9 +276,6 @@ export function handleModal(modalType){
                     console.log(newUser)
                 modalControler.close()
                 renderAccessPage('Login')
-                // setTimeout(() => {
-                //     window.location.replace('/src/pages/')
-                // }, 2000)
                 
             }
 
